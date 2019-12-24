@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="button" class="item" catchtap="selected">
+  <view>请选择分类</view>
+  <view class="result">
+    <text></text>
+    <image src="/img/xiala.png"></image>
+  </view>
+
+</view>
+<view>{{result}}</view>
+<view wx-if="{{showModal}}">
+  <selectTree model='{{ tree }}' props="{{props}}" bind:tapitem='tapItem'></selectTree>
+</view>
